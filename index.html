@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chit Happens</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="board">
+
+        <!-- HEADER -->
+        <header>
+            <p class="eyebrow">A LITTLE CHAOS</p>
+
+            <h1>OFF SCRIPT</h1>
+
+            <p class="subtitle">
+                Pick Somehing.Do something.See where it takes you. ✦
+            </p>
+        </header>
+
+
+        <!-- CATEGORY SECTION -->
+        <section class="categories">
+
+            <p class="section-title">CHOOSE YOUR VIBE</p>
+
+            <div class="categoryButtons">
+
+                <button
+                    class="categoryButton selected"
+                    data-category="all">
+                    ALL
+                </button>
+
+                <button
+                    class="categoryButton"
+                    data-category="creative">
+                    CREATIVE
+                </button>
+
+                <button
+                    class="categoryButton"
+                    data-category="learn">
+                    LEARN
+                </button>
+
+                <button
+                    class="categoryButton"
+                    data-category="do">
+                    DO
+                </button>
+
+                <button
+                    class="categoryButton"
+                    data-category="social">
+                    SOCIAL
+                </button>
+
+                <button
+                    class="categoryButton"
+                    data-category="chaos">
+                    CHAOS
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHIT AREA -->
+        <section class="chitSection">
+
+            <div id="chit" class="chit">
+
+                <div class="pin"></div>
+
+                <div class="tape"></div>
+
+                <p class="chitLabel">
+                    TODAY'S LITTLE TASK
+                </p>
+
+                <div class="chitDivider"></div>
+
+                <p id="chitText">
+                    Pick a chit to find out what fate has planned for you.
+                </p>
+
+                <div class="chitBottom">
+                    <span>✦</span>
+                    <span>GOOD LUCK</span>
+                    <span>✦</span>
+                </div>
+
+            </div>
+
+
+            <!-- PICK BUTTON -->
+            <button id="pickButton" class="pickButton">
+                <span>PICK A CHIT</span>
+                <span class="arrow">→</span>
+            </button>
+
+
+            <!-- DONE BUTTON -->
+            <button id="doneButton" class="doneButton">
+                ✓ MARK AS DONE
+            </button>
+
+        </section>
+
+
+        <!-- ADD YOUR OWN -->
+        <section class="addSection">
+
+            <button id="addButton" class="addButton">
+                ＋ ADD YOUR OWN CHIT
+            </button>
+
+
+            <div id="addBox" class="addBox">
+
+                <p class="addTitle">
+                    WRITE YOUR OWN TASK
+                </p>
+
+                <textarea
+                    id="newChit"
+                    placeholder="What should someone do?"
+                    rows="3">
+                </textarea>
+
+                <button id="saveChit" class="saveButton">
+                    ADD CHIT
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER / COUNTER -->
+        <footer>
+
+            <div class="counterBox">
+
+                <span class="counterNumber"
+                      id="completedCount">
+                    0
+                </span>
+
+                <span class="counterText">
+                    CHITS COMPLETED
+                </span>
+
+            </div>
+
+            <p class="footerText">
+                pick something random. make your day interesting.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
